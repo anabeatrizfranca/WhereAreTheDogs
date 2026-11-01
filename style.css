@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --black: #080808;
@@ -966,4 +966,1536 @@ nav .nav-cta span {
     transition-duration: 0.01ms !important;
   }
 
+}
+
+/* =========================================
+   WHERE ARE THE DOGS? — CAMPAIGN REDESIGN
+   ========================================= */
+
+:root {
+    --campaign-black: #080808;
+    --campaign-white: #ffffff;
+    --campaign-red: #e10c17;
+    --campaign-gray: #b9b9b9;
+    --campaign-line: rgba(255, 255, 255, 0.16);
+    --campaign-max: 1180px;
+}
+
+/* GLOBAL */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    background: var(--campaign-black);
+    color: var(--campaign-white);
+    font-family: 'DM Sans', Arial, sans-serif;
+    line-height: 1.7;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+.header-wordmark,
+.footer-wordmark {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body p {
+    margin-top: 0;
+}
+
+body a {
+    color: inherit;
+}
+
+.content-container {
+    width: min(var(--campaign-max), calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.section-space {
+    padding-block: clamp(70px, 9vw, 125px);
+}
+
+.section-label {
+    margin-bottom: 22px;
+    color: var(--campaign-red);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+body h2 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    line-height: 0.98;
+    text-transform: uppercase;
+}
+
+body h2 span,
+body h3 span {
+    color: var(--campaign-red);
+}
+
+
+/* HEADER */
+
+.campaign-header {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 86px;
+    padding: 0 4%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.08)
+    );
+}
+
+.header-wordmark,
+.footer-wordmark {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.header-wordmark {
+    max-width: 190px;
+}
+
+.campaign-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(15px, 2.5vw, 36px);
+}
+
+.campaign-nav a {
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.campaign-nav a:hover {
+    color: var(--campaign-red);
+}
+
+.campaign-nav .nav-action {
+    padding: 12px 17px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.nav-action span {
+    color: var(--campaign-red);
+    margin-left: 7px;
+}
+
+
+/* HERO */
+
+.campaign-hero {
+    position: relative;
+    min-height: min(900px, 100svh);
+    min-height: max(760px, 100svh);
+    display: flex;
+    align-items: center;
+    isolation: isolate;
+    overflow: hidden;
+    background: #050505;
+}
+
+.campaign-hero-image,
+.campaign-hero-shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.campaign-hero-image {
+    z-index: -2;
+    object-fit: cover;
+    object-position: center 42%;
+    filter: brightness(0.46) saturate(0.7);
+}
+
+.campaign-hero-shade {
+    z-index: -1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.93) 0%,
+            rgba(0, 0, 0, 0.73) 45%,
+            rgba(0, 0, 0, 0.18) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.65),
+            transparent 60%
+        );
+}
+
+.campaign-hero-content {
+    width: min(var(--campaign-max), calc(100% - 48px));
+    margin-inline: auto;
+    padding-top: 115px;
+    padding-bottom: 85px;
+}
+
+.campaign-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.campaign-eyebrow span {
+    flex: 0 0 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--campaign-red);
+}
+
+.campaign-hero h1 {
+    margin-bottom: 27px;
+    font-size: clamp(5rem, 12vw, 10.5rem);
+    line-height: 0.82;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+}
+
+.campaign-hero h1 span {
+    color: var(--campaign-red);
+}
+
+.hero-subheading {
+    max-width: 680px;
+    margin-bottom: 28px;
+    color: #eeeeee;
+    font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+    line-height: 1.4;
+}
+
+.hero-subheading strong {
+    display: block;
+    color: white;
+}
+
+.hero-stat {
+    margin-bottom: 4px;
+    font-size: clamp(1rem, 1.8vw, 1.35rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.hero-demand {
+    margin-bottom: 28px;
+    color: var(--campaign-red);
+    font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.hero-bottom-line {
+    position: absolute;
+    right: 4%;
+    bottom: 25px;
+    left: 4%;
+    padding-top: 18px;
+    border-top: 1px solid var(--campaign-line);
+    color: #d0d0d0;
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+}
+
+
+/* BUTTONS */
+
+.campaign-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    min-height: 48px;
+    padding: 14px 21px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.035em;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.button-red {
+    background: var(--campaign-red);
+    border-color: var(--campaign-red);
+    color: white;
+}
+
+.button-red:hover {
+    background: #b90812;
+    border-color: #b90812;
+}
+
+.button-red span {
+    color: white;
+}
+
+.button-outline {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.6);
+    color: white;
+}
+
+.button-outline:hover {
+    background: white;
+    color: black;
+}
+
+
+/* INTRODUCTION */
+
+.crisis-intro {
+    background: #f2f0ef;
+    color: #111111;
+}
+
+.crisis-intro .section-label {
+    color: #c90c17;
+}
+
+.intro-headline {
+    max-width: 1100px;
+    margin-bottom: 50px;
+    font-size: clamp(2.8rem, 6.6vw, 6rem);
+}
+
+.intro-headline span {
+    color: #cf101b;
+}
+
+.intro-columns {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: clamp(35px, 8vw, 100px);
+}
+
+.intro-lead {
+    font-size: clamp(1.4rem, 2.5vw, 2.1rem);
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.intro-copy p {
+    margin-bottom: 20px;
+    color: #454545;
+    font-size: 0.98rem;
+    line-height: 1.9;
+}
+
+.intro-bottom-note {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 48px;
+    padding-top: 25px;
+    border-top: 1px solid #d2cecc;
+}
+
+.note-line {
+    width: 42px;
+    height: 3px;
+    flex-shrink: 0;
+    background: #cf101b;
+}
+
+.intro-bottom-note p {
+    margin: 0;
+    font-weight: 800;
+}
+
+
+/* EVIDENCE SECTION */
+
+.evidence-section {
+    background: #0b0b0b;
+}
+
+.section-heading-row {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 60px;
+    align-items: end;
+    margin-bottom: 60px;
+}
+
+.section-heading-row h2 {
+    margin-bottom: 0;
+}
+
+.section-heading-row h2 span {
+    color: var(--campaign-red);
+}
+
+.section-heading-summary {
+    margin-bottom: 5px;
+    color: var(--campaign-gray);
+    line-height: 1.9;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--campaign-line);
+    border-left: 1px solid var(--campaign-line);
+}
+
+.evidence-card {
+    min-width: 0;
+    padding: clamp(24px, 4vw, 42px);
+    border-right: 1px solid var(--campaign-line);
+    border-bottom: 1px solid var(--campaign-line);
+}
+
+.evidence-number {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--campaign-red);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.evidence-card h3 {
+    margin-bottom: 20px;
+    font-size: clamp(1.4rem, 2.3vw, 2rem);
+    line-height: 1.1;
+}
+
+.evidence-card p {
+    margin-bottom: 15px;
+    color: #bdbdbd;
+    font-size: 0.93rem;
+    line-height: 1.85;
+}
+
+.evidence-card p:last-child {
+    margin-bottom: 0;
+}
+
+.evidence-disclaimer,
+.data-caveat {
+    margin-top: 22px;
+    color: #929292;
+    font-size: 0.76rem;
+    line-height: 1.8;
+}
+
+
+/* CAPACITY INFOGRAPHIC */
+
+.capacity-section {
+    background: #eae7e6;
+    color: #111111;
+}
+
+.capacity-card {
+    padding: clamp(24px, 5vw, 55px);
+    border-radius: 24px;
+    background: #f7f6f5;
+}
+
+.capacity-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.capacity-heading .section-label {
+    margin-bottom: 13px;
+}
+
+.capacity-heading h2 {
+    margin-bottom: 12px;
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+}
+
+.capacity-heading h2 span {
+    color: #d82026;
+}
+
+.capacity-subtitle {
+    margin-bottom: 0;
+    color: #777777;
+    font-size: 0.94rem;
+}
+
+.data-tag {
+    flex-shrink: 0;
+    padding: 9px 14px;
+    border-radius: 50px;
+    background: #ffe0e5;
+    color: #c21d29;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.capacity-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.capacity-stat {
+    padding: 23px;
+    border-radius: 18px;
+    background: white;
+}
+
+.capacity-stat p {
+    margin-bottom: 12px;
+    color: #777777;
+    font-size: 0.8rem;
+}
+
+.capacity-stat strong {
+    display: block;
+    overflow-wrap: anywhere;
+    font-family: 'League Spartan', sans-serif;
+    font-size: clamp(1.8rem, 3.3vw, 3.1rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.capacity-stat > span {
+    display: block;
+    margin-top: 10px;
+    color: #777777;
+    font-size: 0.75rem;
+}
+
+.capacity-stat-alert {
+    background: #ffdee6;
+    color: #d8272c;
+}
+
+.capacity-stat-alert p,
+.capacity-stat-alert > span {
+    color: #bd252d;
+}
+
+.capacity-chart {
+    padding: clamp(20px, 4vw, 36px);
+    border-radius: 20px;
+    background: white;
+}
+
+.chart-title-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.chart-title-row h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+.chart-title-row > span {
+    color: #888888;
+    font-size: 0.75rem;
+}
+
+.chart-row {
+    margin-bottom: 25px;
+}
+
+.chart-row:last-child {
+    margin-bottom: 0;
+}
+
+.chart-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 9px;
+    font-size: 0.8rem;
+}
+
+.chart-label strong {
+    flex-shrink: 0;
+    font-weight: 800;
+}
+
+.chart-track {
+    width: 100%;
+    height: 16px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #eeeeee;
+}
+
+.chart-bar {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.chart-bar-population {
+    width: 100%;
+    background: #2876f0;
+}
+
+.chart-bar-capacity {
+    width: 2.625%;
+    min-width: 5px;
+    background: #6476a8;
+}
+
+.chart-bar-deficit {
+    width: 97.375%;
+    background: #e12c2c;
+}
+
+.capacity-fact {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 18px;
+    margin-top: 24px;
+    padding: 25px;
+    border-left: 4px solid #df252c;
+    border-radius: 8px;
+    background: #ffeaed;
+}
+
+.fact-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #df252c;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.capacity-fact h3 {
+    margin-bottom: 8px;
+    color: #c51b23;
+    font-size: 1.05rem;
+    letter-spacing: 0;
+}
+
+.capacity-fact p {
+    margin-bottom: 0;
+    color: #4e3738;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.capacity-card .data-caveat {
+    margin-bottom: 0;
+}
+
+
+/* COP31 SECTION */
+
+.cop-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: #080808;
+}
+
+.cop-background,
+.cop-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.cop-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.2) saturate(0.55);
+}
+
+.cop-overlay {
+    z-index: -1;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.96),
+        rgba(0, 0, 0, 0.72)
+    );
+}
+
+.cop-content h2 {
+    max-width: 900px;
+    margin-bottom: 25px;
+    font-size: clamp(3.1rem, 7vw, 6.5rem);
+}
+
+.cop-content h2 span {
+    color: var(--campaign-red);
+}
+
+.cop-lead {
+    max-width: 700px;
+    margin-bottom: 65px;
+    color: #d1d1d1;
+    font-size: 1.15rem;
+}
+
+.cop-points {
+    border-top: 1px solid var(--campaign-line);
+}
+
+.cop-point {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 25px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--campaign-line);
+}
+
+.cop-point > span {
+    color: var(--campaign-red);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.cop-point h3 {
+    margin-bottom: 10px;
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.cop-point p {
+    max-width: 760px;
+    margin-bottom: 0;
+    color: #bdbdbd;
+    font-size: 0.94rem;
+    line-height: 1.85;
+}
+
+
+/* ACTION HUB */
+
+.action-hub {
+    background: #f2f0ef;
+    color: #111111;
+}
+
+.action-hub > .content-container > h2 {
+    margin-bottom: 20px;
+}
+
+.action-hub > .content-container > h2 span {
+    color: #d71924;
+}
+
+.action-intro {
+    max-width: 650px;
+    margin-bottom: 50px;
+    color: #666666;
+    line-height: 1.8;
+}
+
+.action-index {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--campaign-red);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+}
+
+.petition-feature {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 25px;
+    padding: clamp(28px, 5vw, 55px);
+    border-radius: 18px;
+    background: #101010;
+    color: white;
+}
+
+.action-feature-copy h3,
+.action-panel h3 {
+    margin-bottom: 18px;
+    font-size: clamp(1.7rem, 3vw, 2.7rem);
+    line-height: 1.05;
+}
+
+.action-feature-copy p,
+.action-panel > p,
+.action-panel-heading > p {
+    max-width: 650px;
+    margin-bottom: 25px;
+    color: #bdbdbd;
+    font-size: 0.94rem;
+    line-height: 1.85;
+}
+
+.petition-symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'League Spartan', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    transform: rotate(2deg);
+}
+
+.petition-symbol strong {
+    color: var(--campaign-red);
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 900;
+}
+
+.action-panel {
+    margin-top: 25px;
+    padding: clamp(25px, 4vw, 45px);
+    border: 1px solid #dedad8;
+    border-radius: 16px;
+    background: white;
+}
+
+.action-panel-heading {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e7e4e3;
+}
+
+.action-panel-heading > p {
+    color: #555555;
+}
+
+.target-directory {
+    padding-top: 30px;
+}
+
+.target-directory h4 {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.directory-label {
+    margin: 25px 0 10px;
+    color: #c81b25;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.email-list {
+    border-top: 1px solid #e6e3e2;
+}
+
+.email-list a {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e6e3e2;
+    color: #222222;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.email-list a span {
+    color: #777777;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.email-list a:hover,
+.email-list a:hover span {
+    color: #c81b25;
+}
+
+.directory-note {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #777777;
+    font-size: 0.76rem;
+}
+
+.social-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+}
+
+.social-panel h3 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.social-panel p {
+    color: #666666;
+    line-height: 1.8;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    min-height: 48px;
+    padding: 13px 16px;
+    box-sizing: border-box;
+    border: 1px solid #d9d5d3;
+    background: white;
+    color: #111111;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.83rem;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.social-button:hover {
+    background: #111111;
+    color: white;
+}
+
+.social-button span {
+    color: var(--campaign-red);
+}
+
+.copy-feedback {
+    min-height: 20px;
+    margin: 3px 0 0;
+    color: #16803d;
+    font-size: 0.78rem;
+}
+
+
+/* LINKEDIN BANNER DOWNLOAD */
+
+.banner-download {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 35px;
+    align-items: center;
+    margin-top: 25px;
+    padding: clamp(25px, 4vw, 45px);
+    border-radius: 16px;
+    background: #111111;
+    color: white;
+}
+
+.banner-download h3 {
+    margin-bottom: 18px;
+    font-size: clamp(2rem, 3.6vw, 3.4rem);
+    line-height: 1;
+}
+
+.banner-download h3 span {
+    color: var(--campaign-red);
+}
+
+.banner-download-copy > p {
+    margin-bottom: 25px;
+    color: #c2c2c2;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.banner-download .campaign-button {
+    max-width: 100%;
+}
+
+.banner-preview {
+    min-width: 0;
+    overflow: hidden;
+    background: #242424;
+}
+
+.banner-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.dossier-panel {
+    background: #e8e5e3;
+}
+
+.dossier-panel > p {
+    color: #555555;
+}
+
+.dossier-panel .button-outline {
+    border-color: #111111;
+    color: #111111;
+}
+
+.dossier-panel .button-outline:hover {
+    background: #111111;
+    color: white;
+}
+
+
+/* CONTACT */
+
+.contact-section {
+    background: #101010;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(40px, 8vw, 100px);
+    align-items: start;
+}
+
+.contact-copy h2 {
+    font-size: clamp(4rem, 8vw, 7rem);
+}
+
+.contact-copy h2 span {
+    color: var(--campaign-red);
+}
+
+.contact-lead {
+    margin: 25px 0 45px;
+    color: #c8c8c8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.press-note {
+    padding-top: 25px;
+    border-top: 1px solid var(--campaign-line);
+}
+
+.press-note h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+}
+
+.press-note p {
+    color: #a9a9a9;
+    font-size: 0.88rem;
+    line-height: 1.85;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(24px, 4vw, 42px);
+    background: #f5f3f2;
+    color: #111111;
+}
+
+.contact-form h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid #d7d2d0;
+    border-radius: 0;
+    background: white;
+    color: #111111;
+    font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--campaign-red);
+    outline-offset: 1px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .campaign-button {
+    align-self: flex-start;
+}
+
+.form-note {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #777777;
+    font-size: 0.72rem;
+    line-height: 1.7;
+}
+
+
+/* FINAL CALL TO ACTION */
+
+.final-campaign-cta {
+    position: relative;
+    display: flex;
+    min-height: 600px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+    background: #080808;
+}
+
+.final-cta-image,
+.final-cta-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.final-cta-image {
+    z-index: -2;
+    object-fit: cover;
+    object-position: center 50%;
+    filter: brightness(0.28) saturate(0.65);
+}
+
+.final-cta-overlay {
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.final-cta-content {
+    width: min(900px, calc(100% - 40px));
+    padding-block: 90px;
+}
+
+.final-cta-content h2 {
+    margin-bottom: 25px;
+    font-size: clamp(4rem, 12vw, 9rem);
+    line-height: 0.85;
+}
+
+.final-cta-content h2 span {
+    color: var(--campaign-red);
+}
+
+.final-cta-content > p:not(.section-label) {
+    margin: 0 auto 30px;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+}
+
+
+/* FOOTER */
+
+.campaign-footer {
+    padding: 45px 4% 20px;
+    background: #050505;
+    border-top: 3px solid var(--campaign-red);
+}
+
+.footer-wordmark {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.campaign-footer > p {
+    color: #a6a6a6;
+    font-size: 0.84rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #d0d0d0;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--campaign-red);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--campaign-line);
+    color: #888888;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+    .campaign-header {
+        padding-inline: 24px;
+    }
+
+    .campaign-nav {
+        gap: 15px;
+    }
+
+    .campaign-nav a {
+        font-size: 0.76rem;
+    }
+
+    .intro-columns,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .section-heading-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .capacity-stats {
+        gap: 10px;
+    }
+
+    .capacity-stat {
+        padding: 17px;
+    }
+
+    .capacity-stat strong {
+        font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    }
+
+    .banner-download {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-preview {
+        max-width: 100%;
+    }
+
+    .social-panel {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .content-container {
+        width: calc(100% - 32px);
+    }
+
+    .campaign-header {
+        min-height: 70px;
+        padding-inline: 16px;
+        gap: 12px;
+    }
+
+    .header-wordmark {
+        max-width: 125px;
+        font-size: 0.82rem;
+        line-height: 1.1;
+    }
+
+    .campaign-nav {
+        gap: 12px;
+    }
+
+    .campaign-nav a {
+        font-size: 0.7rem;
+    }
+
+    .campaign-nav a:nth-child(1),
+    .campaign-nav a:nth-child(2) {
+        display: none;
+    }
+
+    .campaign-nav .nav-action {
+        padding: 9px;
+    }
+
+    .campaign-hero {
+        min-height: 100svh;
+    }
+
+    .campaign-hero-image {
+        object-position: 58% center;
+    }
+
+    .campaign-hero-shade {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(0, 0, 0, 0.88),
+                rgba(0, 0, 0, 0.45)
+            ),
+            linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.78),
+                transparent 70%
+            );
+    }
+
+    .campaign-hero-content {
+        width: calc(100% - 32px);
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+
+    .campaign-eyebrow {
+        max-width: 300px;
+        font-size: 0.66rem;
+        line-height: 1.6;
+    }
+
+    .campaign-hero h1 {
+        font-size: clamp(4rem, 16vw, 6rem);
+    }
+
+    .hero-subheading {
+        font-size: 1.12rem;
+    }
+
+    .hero-stat {
+        font-size: 0.92rem;
+    }
+
+    .hero-demand {
+        font-size: 0.78rem;
+        line-height: 1.7;
+    }
+
+    .hero-bottom-line {
+        right: 16px;
+        left: 16px;
+        font-size: 0.55rem;
+        line-height: 1.7;
+    }
+
+    .section-space {
+        padding-block: 70px;
+    }
+
+    .intro-headline {
+        font-size: clamp(2.6rem, 11vw, 4.2rem);
+    }
+
+    .evidence-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .evidence-card {
+        padding: 25px;
+    }
+
+    .capacity-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .capacity-heading {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .capacity-heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .capacity-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .capacity-stat {
+        padding: 20px;
+    }
+
+    .capacity-stat strong {
+        font-size: 2.4rem;
+    }
+
+    .capacity-chart {
+        padding: 18px 14px;
+    }
+
+    .chart-title-row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .chart-label {
+        align-items: flex-start;
+        font-size: 0.72rem;
+    }
+
+    .chart-label strong {
+        font-size: 0.7rem;
+    }
+
+    .capacity-fact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .cop-content h2 {
+        font-size: clamp(2.7rem, 11vw, 4.3rem);
+    }
+
+    .cop-point {
+        grid-template-columns: 40px 1fr;
+        gap: 12px;
+    }
+
+    .cop-point > span {
+        font-size: 1.5rem;
+    }
+
+    .petition-feature {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .petition-symbol {
+        padding: 20px;
+    }
+
+    .email-list a {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .email-list a span {
+        text-align: left;
+    }
+
+    .banner-download {
+        padding: 22px;
+    }
+
+    .banner-download .campaign-button {
+        width: 100%;
+        font-size: 0.72rem;
+    }
+
+    .contact-copy h2 {
+        font-size: 4.5rem;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+
+    .final-campaign-cta {
+        min-height: 500px;
+    }
+
+    .final-cta-content h2 {
+        font-size: clamp(3.5rem, 15vw, 5.8rem);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }

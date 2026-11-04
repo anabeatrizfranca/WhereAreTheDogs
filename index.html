@@ -3,1591 +3,821 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="theme-color" content="#080808">
-
     <title>Where Are the Dogs? | COP31 Must Not Look Away</title>
-
     <meta name="description" content="The truth behind Türkiye's Law No. 7527. Demand transparency, animal protection and accountability ahead of COP31.">
 
     <!-- FONTS -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=League+Spartan:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css">
 
-    <!-- IN DEFENSE OF ANIMALS PARTNERSHIP STYLE -->
     <style>
-        .ida-partnership {
-            background: #f4f1ef;
-            color: #101010;
-            padding: clamp(38px, 5vw, 68px) 24px;
-            border-top: 5px solid #e50918;
-            border-bottom: 5px solid #e50918;
-        }
-
-        .ida-partnership-inner {
-            width: min(1180px, 100%);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: minmax(180px, .72fr) minmax(0, 1.8fr);
-            align-items: center;
-            gap: clamp(28px, 5vw, 72px);
-        }
-
-        .ida-logo-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #fff;
-            padding: 24px;
-            min-height: 170px;
-            border: 1px solid rgba(0,0,0,.1);
-        }
-
-        .ida-logo {
-            display: block;
-            width: min(100%, 300px);
-            max-height: 180px;
-            object-fit: contain;
-        }
-
-        .ida-eyebrow {
-            margin: 0 0 12px;
-            color: #e50918;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: .18em;
-        }
-
-        .ida-partnership-copy h2 {
-            margin: 0 0 16px;
-            color: #101010;
-            font-family: "League Spartan", sans-serif;
-            font-size: clamp(30px, 4vw, 46px);
-            line-height: .98;
-            font-weight: 900;
-        }
-
-        .ida-partnership-copy p:not(.ida-eyebrow) {
-            max-width: 760px;
-            margin: 0 0 24px;
-            font-size: 17px;
-            line-height: 1.65;
-        }
-
-        .ida-action-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #e50918;
-            color: #fff;
-            border: 2px solid #e50918;
-            text-align: center;
-            text-decoration: none;
-            padding: 15px 22px;
-            font-weight: 800;
-        }
-
-        .ida-action-button:hover {
-            background: #b9000d;
-            border-color: #b9000d;
-        }
-
-        @media (max-width: 700px) {
-            .ida-partnership-inner {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .ida-logo-wrap {
-                min-height: 130px;
-            }
-
-            .ida-logo {
-                max-height: 130px;
-            }
-
-            .ida-action-button {
-                width: 100%;
-                box-sizing: border-box;
-            }
-        }
+        .ida-partnership { background:#f4f1ef; color:#101010; padding:clamp(42px,6vw,82px) 24px; border-top:5px solid #e50918; border-bottom:5px solid #e50918; }
+        .ida-partnership-inner { width:min(1180px,100%); margin:0 auto; display:grid; grid-template-columns:minmax(180px,.72fr) minmax(0,1.8fr); align-items:center; gap:clamp(28px,5vw,72px); }
+        .ida-logo-link { display:flex; align-items:center; justify-content:center; background:#fff; padding:24px; min-height:180px; border:1px solid rgba(0,0,0,.08); }
+        .ida-logo { display:block; width:min(100%,300px); max-height:190px; object-fit:contain; }
+        .ida-eyebrow { margin:0 0 12px; color:#e50918; font-size:12px; font-weight:800; letter-spacing:.18em; }
+        .ida-partnership-copy h2 { margin:0 0 16px; color:#101010; font-family:"League Spartan",sans-serif; font-size:clamp(30px,4vw,48px); line-height:.98; font-weight:900; }
+        .ida-partnership-copy p:not(.ida-eyebrow) { max-width:760px; margin:0 0 24px; font-size:17px; line-height:1.65; }
+        .ida-action-button { display:inline-flex; align-items:center; justify-content:center; background:#e50918; color:#fff; border:2px solid #e50918; text-align:center; }
+        .ida-action-button:hover { background:#b9000d; border-color:#b9000d; }
+        @media(max-width:700px) { .ida-partnership-inner { grid-template-columns:1fr; text-align:center; } .ida-logo-link { min-height:130px; } .ida-logo { max-height:130px; } .ida-action-button { width:100%; box-sizing:border-box; } }
     </style>
-
 </head>
 
 <body>
-
     <!-- HEADER -->
-
     <header class="campaign-header">
-
         <a class="header-wordmark" href="#home">
-
             WHERE ARE THE DOGS?
-
         </a>
-
         <nav class="campaign-nav" aria-label="Main navigation">
-
             <a href="#crisis">The crisis</a>
-
             <a href="#cop31">COP31</a>
-
             <a href="#action">Take action</a>
-
             <a href="#contact" class="nav-action">
-
                 Contact <span>↗</span>
-
             </a>
-
         </nav>
-
     </header>
 
     <main>
-
         <!-- HERO -->
-
         <section class="campaign-hero" id="home">
-
             <img
-
                 class="campaign-hero-image"
-
                 src="assets/images/image2.png"
-
                 alt="A street dog in Türkiye"
-
                 fetchpriority="high"
-
             >
-
             <div class="campaign-hero-shade"></div>
-
             <div class="campaign-hero-content">
-
                 <p class="hero-demand">
-
                     THE WORLD MUST DEMAND ANSWERS.
-
                 </p>
-
                 <h1>
-
                     WHERE ARE<br>
-
                     THE <span>DOGS?</span>
-
                 </h1>
-
                 <p class="hero-stat">
-
                     In 2024 Turkiye sentenced its 4 million dogs to death.
-
                 </p>
-
                 <p class="hero-subheading">
-
                     As the world prepares to gather in Antalya for COP31
-
                     we demand justice and accountability for this atrocity.
-
                 </p>
-
             </div>
-
             <div class="hero-bottom-line">
-
                 ANIMAL PROTECTION · TRANSPARENCY · ACCOUNTABILITY
-
             </div>
-
         </section>
-
 
         <!-- IN PARTNERSHIP: IN DEFENSE OF ANIMALS -->
-
         <section class="ida-partnership" id="in-defense-of-animals" aria-labelledby="ida-title">
-
             <div class="ida-partnership-inner">
-
-                <div class="ida-logo-wrap">
-
-                    <img
-
-                        src="assets/images/logoDefense.png"
-
-                        alt="In Defense of Animals logo"
-
-                        class="ida-logo"
-
-                    >
-
-                </div>
-
+                <a class="ida-logo-link"
+                   href="https://www.idausa.org/campaign/animal-companions/latest/stop-turkiyes-gruesome-mass-killing-of-4-million-homeless-dogs-and-cats/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Visit In Defense of Animals latest updates">
+                    <img src="assets/images/logoDefense.png"
+                         alt="In Defense of Animals logo"
+                         class="ida-logo">
+                </a>
                 <div class="ida-partnership-copy">
-
                     <p class="ida-eyebrow">CAMPAIGN PARTNERSHIP</p>
-
-                    <h2 id="ida-title">
-
-                        IN PARTNERSHIP WITH IN DEFENSE OF ANIMALS
-
-                    </h2>
-
+                    <h2 id="ida-title">IN PARTNERSHIP WITH IN DEFENSE OF ANIMALS</h2>
                     <p>
-
                         Click the link to view their latest updates about the community dogs
-
-                        of Turkey, send their letter and access their resources.
-
+                        of Türkiye, send their letter and access their resources.
                     </p>
-
-                    <a
-
-                        class="campaign-button button-red ida-action-button"
-
-                        href="https://www.idausa.org/campaign/animal-companions/latest/stop-turkiyes-gruesome-mass-killing-of-4-million-homeless-dogs-and-cats/"
-
-                        target="_blank"
-
-                        rel="noopener noreferrer"
-
-                    >
-
+                    <a class="campaign-button button-red ida-action-button"
+                       href="https://www.idausa.org/campaign/animal-companions/latest/stop-turkiyes-gruesome-mass-killing-of-4-million-homeless-dogs-and-cats/"
+                       target="_blank" rel="noopener noreferrer">
                         TAKE ACTION WITH IN DEFENSE OF ANIMALS <span>↗</span>
-
                     </a>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- INTRODUCTION -->
-
         <section class="crisis-intro section-space" id="crisis">
-
             <div class="content-container">
-
                 <p class="section-label">THE CRISIS</p>
-
                 <h2 class="intro-headline">
-
                     THEIR LIVES MATTER<br>
-
                     THEIR SUFFERING MATTERS<br>
-
                     <span>THEIR FATE MUST NOT BE HIDDEN</span>
-
                 </h2>
-
                 <div class="intro-columns">
-
                     <p class="intro-lead">
-
                         As the world gathers in Türkiye for COP31,
-
                         millions of community animals face an uncertain
-
                         future under Law No. 7527
-
                     </p>
-
                     <div class="intro-copy">
-
                         <p>
-
                             In July 2024, the Turkish Government changed
-
                             its approach to street animal population
-
                             management, moving away from the previous
-
                             capture-neuter-vaccinate-return (CNVR) approach
-
                             towards widespread collection and confinement.
-
                         </p>
-
                         <p>
-
                             Reports from across Türkiye describe dogs
-
                             killed in horrific circumstances, appalling
-
                             shelter conditions, mass graves and alleged
-
                             cases of animals buried alive.
-
                         </p>
-
                         <p>
-
                             These are not faceless statistics. They are
-
                             sentient beings who lived alongside people,
-
                             were cared for and loved by local communities.
-
                         </p>
-
                         <p>
-
                             As Türkiye prepares to host COP31 in Antalya,
-
                             the international community must confront
-
                             the evidence and demand accountability.
-
                         </p>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- PHOTO STRIP -->
-
         <section class="campaign-photo-strip">
-
             <div class="gallery-grid">
-
                 <figure>
-
                     <img
-
                         src="assets/images/image1.png"
-
                         alt="Community dogs in Türkiye"
-
                         loading="lazy"
-
                     >
-
                 </figure>
-
                 <figure class="gallery-tall">
-
                     <img
-
                         src="assets/images/image3.png"
-
                         alt="A community dog"
-
                         loading="lazy"
-
                     >
-
                 </figure>
-
                 <figure>
-
                     <img
-
                         src="assets/images/image5.png"
-
                         alt="A street dog"
-
                         loading="lazy"
-
                     >
-
                 </figure>
-
             </div>
-
         </section>
-
 
         <!-- SECTION 01: THE CRISIS -->
-
         <section class="evidence-section section-space">
-
             <div class="content-container">
-
                 <div class="section-heading-row">
-
                     <div>
-
                         <p class="section-label">SECTION 01</p>
-
                         <h2>
-
                             ROUNDED UP<br>
-
                             TORTURED<br>
-
                             <span>KILLED</span>
-
                         </h2>
-
                     </div>
-
                     <p class="section-heading-summary">
-
                         Reports from Türkiye raise serious concerns
-
                         about capture operations, shelter conditions,
-
                         animal deaths and alleged live burials
-
                     </p>
-
                 </div>
-
                 <div class="evidence-grid">
-
                     <article class="evidence-card">
-
                         <span class="evidence-number">01</span>
-
                         <h3>CAPTURE & ABDUCTION</h3>
-
                         <p>
-
                             Municipal teams reportedly used steel
-
                             tongs, wire snares and tranquilizer darts
-
                             to remove dogs from the communities where
-
                             they were born and cared for.
-
                         </p>
-
                         <p>
-
                             Puppies, elderly dogs and healthy animals
-
                             were reportedly placed in crowded vehicles,
-
                             raising concerns about injuries and
-
                             inhumane handling.
-
                         </p>
-
                     </article>
-
                     <article class="evidence-card">
-
                         <span class="evidence-number">02</span>
-
                         <h3>INSIDE MUNICIPAL SHELTERS</h3>
-
                         <p>
-
                             Reports describe overcrowded concrete pens,
-
                             exposure to extreme weather, inadequate
-
                             bedding and concerns about access to food
-
                             and clean water.
-
                         </p>
-
                         <p>
-
                             Independent inspections and transparent
-
                             veterinary records are urgently needed.
-
                         </p>
-
                     </article>
-
                     <article class="evidence-card">
-
                         <span class="evidence-number">03</span>
-
                         <h3>DISEASE & NEGLECT</h3>
-
                         <p>
-
                             Overcrowding and inadequate veterinary
-
                             care can create serious animal welfare
-
                             and public health risks.
-
                         </p>
-
                         <p>
-
                             Vaccination records, treatment protocols
-
                             and mortality figures must be independently
-
                             examined.
-
                         </p>
-
                     </article>
-
                     <article class="evidence-card">
-
                         <span class="evidence-number">04</span>
-
                         <h3>DEATHS & MASS GRAVES</h3>
-
                         <p>
-
                             Reports of mass graves and alleged cases
-
                             of animals buried alive demand proper
-
                             forensic and independent investigation.
-
                         </p>
-
                         <p>
-
                             Authorities must provide transparent
-
                             information about animal deaths and
-
                             the handling of remains.
-
                         </p>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- CAPACITY INFOGRAPHIC -->
-
         <section class="capacity-section section-space">
-
             <div class="content-container">
-
                 <div class="capacity-card">
-
                     <div class="capacity-heading">
-
                         <div>
-
                             <p class="section-label">THE NUMBERS</p>
-
                             <h2>
-
                                 THE <span>CAPACITY GAP</span>
-
                             </h2>
-
                             <p class="capacity-subtitle">
-
                                 Estimated street dog population
-
                                 vs. municipal shelter capacity
-
                             </p>
-
                         </div>
-
                         <span class="data-tag">
-
                             CAPACITY ANALYSIS
-
                         </span>
-
                     </div>
-
                     <div class="capacity-stats">
-
                         <div class="capacity-stat">
-
                             <p>Estimated street dog population</p>
-
                             <strong>4,000,000</strong>
-
                             <span>Dogs targeted by the policy</span>
-
                         </div>
-
                         <div class="capacity-stat">
-
                             <p>Municipal shelter capacity</p>
-
                             <strong>105,000</strong>
-
                             <span>Available places</span>
-
                         </div>
-
                         <div class="capacity-stat capacity-stat-alert">
-
                             <p>Capacity gap</p>
-
                             <strong>3,895,000</strong>
-
                             <span>Places below the estimated population</span>
-
                         </div>
-
                     </div>
-
                     <div class="capacity-chart">
-
                         <div class="chart-title-row">
-
                             <h3>POPULATION VS CAPACITY</h3>
-
                             <span>Illustrative scale</span>
-
                         </div>
-
                         <div class="chart-row">
-
                             <div class="chart-label">
-
                                 <span>Street dog population</span>
-
                                 <strong>4,000,000</strong>
-
                             </div>
-
                             <div class="chart-track">
-
                                 <div class="chart-bar chart-bar-population"></div>
-
                             </div>
-
                         </div>
-
                         <div class="chart-row">
-
                             <div class="chart-label">
-
                                 <span>Shelter capacity</span>
-
                                 <strong>105,000</strong>
-
                             </div>
-
                             <div class="chart-track">
-
                                 <div class="chart-bar chart-bar-capacity"></div>
-
                             </div>
-
                         </div>
-
                         <div class="chart-row">
-
                             <div class="chart-label">
-
                                 <span>Capacity gap</span>
-
                                 <strong>3,895,000</strong>
-
                             </div>
-
                             <div class="chart-track">
-
                                 <div class="chart-bar chart-bar-deficit"></div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="capacity-fact">
-
                         <span class="fact-mark">!</span>
-
                         <div>
-
                             <h3>THE INFRASTRUCTURE QUESTION</h3>
-
                             <p>
-
                                 If the estimated population is 4 million
-
                                 and stated shelter capacity is 105,000,
-
                                 available capacity represents approximately
-
                                 2.6% of that population. This raises urgent
-
                                 questions about implementation, animal
-
                                 welfare and the fate of dogs removed
-
                                 from the streets.
-
                             </p>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- SECTION 02: COP31 -->
-
         <section class="cop-section section-space" id="cop31">
-
             <div class="cop-background">
-
                 <img
-
                     src="assets/images/image4.png"
-
                     alt=""
-
                     loading="lazy"
-
                 >
-
             </div>
-
             <div class="cop-overlay"></div>
-
             <div class="content-container cop-content">
-
                 <p class="section-label">SECTION 02 · COP31</p>
-
                 <h2>
-
                     SUSTAINABILITY<br>
-
                     ON STAGE<br>
-
                     <span>ANIMAL SUFFERING<br>IN THE SHADOWS</span>
-
                 </h2>
-
                 <p class="cop-lead">
-
                     A sustainable future requires transparency,
-
                     accountability and respect for animal welfare
-
                 </p>
-
                 <div class="cop-points">
-
                     <article class="cop-point">
-
                         <span>01</span>
-
                         <div>
-
                             <h3>SUSTAINABILITY MUST MEAN ACCOUNTABILITY</h3>
-
                             <p>
-
                                 World leaders will gather in Antalya to
-
                                 discuss a sustainable future. They must
-
                                 also address the treatment of community
-
                                 dogs and demand transparent answers.
-
                             </p>
-
                         </div>
-
                     </article>
-
                     <article class="cop-point">
-
                         <span>02</span>
-
                         <div>
-
                             <h3>ONE HEALTH: ANIMAL HEALTH IS PUBLIC HEALTH</h3>
-
                             <p>
-
                                 Human, animal and environmental health
-
                                 are connected. Humane population
-
                                 management, veterinary oversight and
-
                                 disease prevention matter.
-
                             </p>
-
                         </div>
-
                     </article>
-
                     <article class="cop-point">
-
                         <span>03</span>
-
                         <div>
-
                             <h3>WHAT ARE THE CONSEQUENCES?</h3>
-
                             <p>
-
                                 Reports of animal deaths, burial sites
-
                                 and poor shelter conditions demand
-
                                 independent investigation, including
-
                                 potential environmental risks.
-
                             </p>
-
                         </div>
-
                     </article>
-
                     <article class="cop-point">
-
                         <span>04</span>
-
                         <div>
-
                             <h3>THE INTERNATIONAL COMMUNITY MUST ACT</h3>
-
                             <p>
-
                                 We call on COP31 delegates, governments
-
                                 and international organisations to
-
                                 demand transparency, independent
-
                                 investigations and accountability.
-
                             </p>
-
                         </div>
-
                     </article>
-
                 </div>
-
             </div>
-
         </section>
-
 
         <!-- SECTION 03: ACTION HUB -->
-
         <section class="action-hub section-space" id="action">
-
             <div class="content-container">
-
                 <p class="section-label">SECTION 03</p>
-
                 <h2>
-
                     TAKE ACTION<br>
-
                     <span>MAKE YOUR VOICE HEARD</span>
-
                 </h2>
-
                 <p class="action-intro">
-
                     Sign the petition, contact decision-makers
-
                     and share the campaign
-
                 </p>
 
-
                 <!-- ACTION 01: PETITION -->
-
                 <article class="action-feature petition-feature">
-
                     <div class="action-feature-copy">
-
                         <span class="action-index">ACTION 01</span>
-
                         <h3>SIGN THE PETITION</h3>
-
                         <p>
-
                             Add your voice to the call for transparency,
-
                             animal protection and accountability in Türkiye.
-
                         </p>
-
                         <a
-
                             class="campaign-button button-red"
-
                             href="https://c.org/QBRM29h4LL"
-
                             target="_blank"
-
                             rel="noopener noreferrer"
-
                         >
-
                             SIGN THE PETITION <span>↗</span>
-
                         </a>
-
                     </div>
-
                     <div class="petition-symbol" aria-hidden="true">
-
                         <span>YOUR</span>
-
                         <strong>VOICE</strong>
-
                         <span>MATTERS</span>
-
                     </div>
-
                 </article>
-
 
                 <!-- ACTION 02: EMAIL -->
+                <article class="action-panel">
+                    <div class="action-panel-heading">
+                        <span class="action-index">ACTION 02</span>
+                        <h3>SEND A DEMAND LETTER</h3>
+                    </div>
 
-                                        <a href="mailto:secretariat@unfccc.int?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Animal%20Welfare%20and%20COP31&body=Dear%20UNFCCC%20Secretariat%2C%0A%0AAs%20the%20world%20prepares%20to%20gather%20in%20T%C3%BCrkiye%20for%20COP31%2C%20I%20am%20writing%20to%20ask%20that%20animal%20welfare%20and%20the%20situation%20of%20community%20dogs%20in%20T%C3%BCrkiye%20receive%20appropriate%20attention.%0A%0AI%20respectfully%20encourage%20the%20Secretariat%20to%20recognise%20the%20links%20between%20sustainability%2C%20environmental%20responsibility%20and%20the%20humane%20treatment%20of%20animals%2C%20and%20to%20help%20ensure%20that%20these%20concerns%20are%20not%20overlooked%20in%20discussions%20surrounding%20COP31.%0A%0APlease%20consider%20this%20matter%20and%20encourage%20transparency%20and%20accountability%20from%20the%20relevant%20authorities.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            UNFCCC Secretariat
-                            <span>secretariat@unfccc.int</span>
-                        </a>
+                    <div class="target-directory">
+                        <h4>OFFICIAL TARGET DIRECTORY</h4>
+                        <p class="directory-label">
+                            UN INTERNATIONAL BODIES & OVERSIGHT
+                        </p>
+                        <div class="email-list">
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=secretariat%40unfccc.int&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Animal+Welfare+and+COP31&amp;body=Dear+UNFCCC+Secretariat%2C%0A%0AAs+the+world+prepares+to+gather+in+T%C3%BCrkiye+for+COP31%2C+I+am+writing+to+ask+that+animal+welfare+and+the+situation+of+community+dogs+in+T%C3%BCrkiye+receive+appropriate+attention.%0A%0AI+respectfully+encourage+the+Secretariat+to+recognise+the+links+between+sustainability%2C+environmental+responsibility+and+the+humane+treatment+of+animals%2C+and+to+help+ensure+that+these+concerns+are+not+overlooked+in+discussions+surrounding+COP31.%0A%0APlease+consider+this+matter+and+encourage+transparency+and+accountability+from+the+relevant+authorities.%0A%0AThank+you+for+your+time+and+consideration.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                UNFCCC Secretariat
+                                <span>secretariat@unfccc.int</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ohchr-infodesk%40un.org&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Request+for+Human+Rights+Attention&amp;body=Dear+UN+Human+Rights+Desk%2C%0A%0AI+am+writing+to+bring+to+your+attention+concerns+regarding+the+treatment+of+community+dogs+in+T%C3%BCrkiye+following+the+adoption+of+Law+No.+7527.%0A%0AReports+of+mass+collection%2C+inadequate+shelter+conditions+and+animal+deaths+raise+serious+concerns+that+merit+attention%2C+transparency+and+appropriate+independent+review.%0A%0AI+respectfully+ask+that+you+consider+whether+this+matter+falls+within+the+relevant+human+rights+mandates+and+whether+further+information+or+action+is+appropriate.%0A%0AThank+you+for+your+time+and+consideration.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                UN Human Rights Desk
+                                <span>ohchr-infodesk@un.org</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ohchr-sr-environment%40un.org&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Environmental+and+Animal+Welfare+Concerns+in+T%C3%BCrkiye&amp;body=Dear+Special+Rapporteur+on+the+Human+Right+to+a+Clean%2C+Healthy+and+Sustainable+Environment%2C%0A%0AI+am+writing+to+raise+concerns+about+the+treatment+of+community+dogs+in+T%C3%BCrkiye+and+the+potential+environmental+and+public+health+implications+of+reported+shelter+conditions%2C+animal+deaths+and+alleged+burial+sites.%0A%0AI+respectfully+ask+that+these+concerns+be+considered+within+the+scope+of+your+mandate%2C+including+the+connections+between+environmental+protection%2C+public+health+and+animal+welfare.%0A%0AWe+call+for+transparency%2C+independent+investigation+and+accountability.%0A%0AThank+you+for+your+attention.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                UN Special Rapporteur on Environment
+                                <span>ohchr-sr-environment@un.org</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=unep-executiveoffice%40un.org&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Environmental+Concerns+Ahead+of+COP31&amp;body=Dear+UNEP+Executive+Office%2C%0A%0AI+am+writing+to+raise+concerns+about+reports+relating+to+the+treatment+of+community+dogs+in+T%C3%BCrkiye%2C+including+shelter+conditions%2C+animal+deaths+and+alleged+burial+sites.%0A%0AThese+issues+may+have+implications+for+environmental+health+and+the+relationship+between+human%2C+animal+and+ecosystem+health.+I+respectfully+ask+UNEP+to+consider+whether+the+matter+is+relevant+to+its+work+and+to+encourage+transparent%2C+evidence-based+assessment+where+appropriate.%0A%0AThank+you+for+your+time+and+consideration.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                UNEP Executive Office
+                                <span>unep-executiveoffice@un.org</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=woah%40woah.org&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Animal+Health+and+Welfare+Concerns+in+T%C3%BCrkiye&amp;body=Dear+World+Organisation+for+Animal+Health%2C%0A%0AI+am+writing+to+bring+to+your+attention+concerns+regarding+the+management+and+welfare+of+community+dogs+in+T%C3%BCrkiye.%0A%0AReports+describing+overcrowded+shelters%2C+inadequate+veterinary+care+and+animal+deaths+underline+the+importance+of+humane+population+management%2C+veterinary+oversight%2C+disease+prevention+and+transparent+reporting.%0A%0AI+respectfully+ask+your+organisation+to+consider+this+matter+within+its+mandate+and+encourage+the+relevant+authorities+to+ensure+appropriate+animal+health+and+welfare+standards.%0A%0AThank+you+for+your+attention.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                World Organisation for Animal Health
+                                <span>woah@woah.org</span>
+                            </a>
+                        </div>
 
-                        <a href="mailto:ohchr-infodesk@un.org?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Request%20for%20Human%20Rights%20Attention&body=Dear%20UN%20Human%20Rights%20Desk%2C%0A%0AI%20am%20writing%20to%20bring%20to%20your%20attention%20concerns%20regarding%20the%20treatment%20of%20community%20dogs%20in%20T%C3%BCrkiye%20following%20the%20adoption%20of%20Law%20No.%207527.%0A%0AReports%20of%20mass%20collection%2C%20inadequate%20shelter%20conditions%20and%20animal%20deaths%20raise%20serious%20concerns%20that%20merit%20attention%2C%20transparency%20and%20appropriate%20independent%20review.%0A%0AI%20respectfully%20ask%20that%20you%20consider%20whether%20this%20matter%20falls%20within%20the%20relevant%20human%20rights%20mandates%20and%20whether%20further%20information%20or%20action%20is%20appropriate.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            UN Human Rights Desk
-                            <span>ohchr-infodesk@un.org</span>
-                        </a>
-
-                        <a href="mailto:ohchr-sr-environment@un.org?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Environmental%20and%20Animal%20Welfare%20Concerns%20in%20T%C3%BCrkiye&body=Dear%20Special%20Rapporteur%20on%20the%20Human%20Right%20to%20a%20Clean%2C%20Healthy%20and%20Sustainable%20Environment%2C%0A%0AI%20am%20writing%20to%20raise%20concerns%20about%20the%20treatment%20of%20community%20dogs%20in%20T%C3%BCrkiye%20and%20the%20potential%20environmental%20and%20public%20health%20implications%20of%20reported%20shelter%20conditions%2C%20animal%20deaths%20and%20alleged%20burial%20sites.%0A%0AI%20respectfully%20ask%20that%20these%20concerns%20be%20considered%20within%20the%20scope%20of%20your%20mandate%2C%20including%20the%20connections%20between%20environmental%20protection%2C%20public%20health%20and%20animal%20welfare.%0A%0AWe%20call%20for%20transparency%2C%20independent%20investigation%20and%20accountability.%0A%0AThank%20you%20for%20your%20attention.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            UN Special Rapporteur on Environment
-                            <span>ohchr-sr-environment@un.org</span>
-                        </a>
-
-                        <a href="mailto:unep-executiveoffice@un.org?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Environmental%20Concerns%20Ahead%20of%20COP31&body=Dear%20UNEP%20Executive%20Office%2C%0A%0AI%20am%20writing%20to%20raise%20concerns%20about%20reports%20relating%20to%20the%20treatment%20of%20community%20dogs%20in%20T%C3%BCrkiye%2C%20including%20shelter%20conditions%2C%20animal%20deaths%20and%20alleged%20burial%20sites.%0A%0AThese%20issues%20may%20have%20implications%20for%20environmental%20health%20and%20the%20relationship%20between%20human%2C%20animal%20and%20ecosystem%20health.%20I%20respectfully%20ask%20UNEP%20to%20consider%20whether%20the%20matter%20is%20relevant%20to%20its%20work%20and%20to%20encourage%20transparent%2C%20evidence-based%20assessment%20where%20appropriate.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            UNEP Executive Office
-                            <span>unep-executiveoffice@un.org</span>
-                        </a>
-
-                        <a href="mailto:woah@woah.org?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Animal%20Health%20and%20Welfare%20Concerns%20in%20T%C3%BCrkiye&body=Dear%20World%20Organisation%20for%20Animal%20Health%2C%0A%0AI%20am%20writing%20to%20bring%20to%20your%20attention%20concerns%20regarding%20the%20management%20and%20welfare%20of%20community%20dogs%20in%20T%C3%BCrkiye.%0A%0AReports%20describing%20overcrowded%20shelters%2C%20inadequate%20veterinary%20care%20and%20animal%20deaths%20underline%20the%20importance%20of%20humane%20population%20management%2C%20veterinary%20oversight%2C%20disease%20prevention%20and%20transparent%20reporting.%0A%0AI%20respectfully%20ask%20your%20organisation%20to%20consider%20this%20matter%20within%20its%20mandate%20and%20encourage%20the%20relevant%20authorities%20to%20ensure%20appropriate%20animal%20health%20and%20welfare%20standards.%0A%0AThank%20you%20for%20your%20attention.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            World Organisation for Animal Health
-                            <span>woah@woah.org</span>
-                        </a>
-
-                        <a href="mailto:cumhurbaskanligi@tccb.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Request%20for%20Transparency%20and%20Animal%20Protection&body=Dear%20Presidency%20of%20the%20Republic%20of%20T%C3%BCrkiye%2C%0A%0AI%20am%20writing%20to%20express%20serious%20concern%20about%20the%20situation%20of%20community%20dogs%20in%20T%C3%BCrkiye%20following%20the%20implementation%20of%20Law%20No.%207527.%0A%0AI%20respectfully%20urge%20the%20Presidency%20to%20ensure%20that%20the%20implementation%20of%20the%20law%20is%20transparent%2C%20humane%20and%20consistent%20with%20animal%20welfare%20principles.%20Reports%20of%20poor%20shelter%20conditions%2C%20animal%20deaths%20and%20alleged%20mass%20graves%20require%20credible%20independent%20investigation%20and%20public%20accountability.%0A%0APlease%20ensure%20that%20the%20relevant%20authorities%20provide%20clear%20information%20about%20the%20fate%20and%20welfare%20of%20dogs%20removed%20from%20the%20streets.%0A%0AThank%20you%20for%20your%20attention.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Presidency of the Republic of Türkiye
-                            <span>cumhurbaskanligi@tccb.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:ozelkalem@icisleri.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Request%20for%20Investigation%20and%20Transparency&body=Dear%20Ministry%20of%20Interior%2C%0A%0AI%20am%20writing%20to%20raise%20concerns%20about%20the%20collection%20and%20placement%20of%20community%20dogs%20in%20municipal%20shelters%20across%20T%C3%BCrkiye.%0A%0AI%20respectfully%20request%20transparent%20information%20about%20the%20implementation%20of%20Law%20No.%207527%2C%20including%20the%20locations%20where%20dogs%20are%20being%20held%2C%20their%20conditions%20of%20care%2C%20veterinary%20oversight%20and%20mortality%20records.%0A%0APlease%20encourage%20municipalities%20to%20comply%20with%20animal%20welfare%20requirements%20and%20ensure%20that%20credible%20allegations%20of%20mistreatment%20are%20independently%20investigated.%0A%0AThank%20you%20for%20your%20attention.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Ministry of Interior
-                            <span>ozelkalem@icisleri.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:gsekreter@icisleri.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Request%20for%20Official%20Information&body=Dear%20General%20Secretariat%20of%20the%20Ministry%20of%20Interior%2C%0A%0AI%20am%20writing%20to%20request%20transparency%20and%20accountability%20regarding%20the%20implementation%20of%20Law%20No.%207527%20and%20the%20treatment%20of%20community%20dogs%20in%20T%C3%BCrkiye.%0A%0APlease%20provide%20or%20direct%20this%20inquiry%20to%20the%20appropriate%20department%20responsible%20for%20oversight%20of%20municipal%20practices%2C%20shelter%20conditions%2C%20veterinary%20care%20and%20reporting%20of%20animal%20deaths.%0A%0AI%20respectfully%20ask%20that%20concerns%20about%20alleged%20mistreatment%20be%20reviewed%20and%20that%20relevant%20information%20be%20made%20publicly%20available.%0A%0AThank%20you%20for%20your%20assistance.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Ministry of Interior — General Secretariat
-                            <span>gsekreter@icisleri.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:basin@icisleri.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Media%20Inquiry%20on%20Community%20Dogs%20in%20T%C3%BCrkiye&body=Dear%20Press%20Office%20of%20the%20Ministry%20of%20Interior%2C%0A%0AI%20am%20writing%20to%20request%20an%20official%20response%20regarding%20the%20implementation%20of%20Law%20No.%207527%20and%20reports%20concerning%20the%20treatment%20of%20community%20dogs%20in%20T%C3%BCrkiye.%0A%0ACould%20the%20Ministry%20provide%20information%20about%20the%20number%20of%20dogs%20collected%2C%20their%20current%20locations%2C%20shelter%20conditions%2C%20veterinary%20care%2C%20and%20reported%20mortality%20figures%3F%0A%0AWe%20would%20appreciate%20a%20transparent%20response%20addressing%20the%20concerns%20raised%20by%20the%20public%20and%20animal%20welfare%20organisations.%0A%0AThank%20you%20for%20your%20time.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Ministry of Interior — Press
-                            <span>basin@icisleri.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:bilgi@csb.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Environmental%20Oversight%20and%20Transparency&body=Dear%20Ministry%20of%20Environment%2C%20Urbanisation%20and%20Climate%20Change%2C%0A%0AI%20am%20writing%20to%20raise%20concerns%20about%20reports%20relating%20to%20the%20treatment%20of%20community%20dogs%20in%20T%C3%BCrkiye%2C%20including%20shelter%20conditions%2C%20animal%20deaths%20and%20alleged%20burial%20sites.%0A%0AI%20respectfully%20ask%20the%20Ministry%20to%20consider%20any%20environmental%2C%20sanitation%20or%20public%20health%20implications%20within%20its%20remit%20and%20to%20support%20transparent%20assessment%20and%20appropriate%20oversight%20where%20necessary.%0A%0AThank%20you%20for%20your%20attention.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Ministry of Environment, Urbanisation & Climate Change
-                            <span>bilgi@csb.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:uluslararasi@csb.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20International%20Environmental%20Attention%20Ahead%20of%20COP31&body=Dear%20International%20Affairs%20Department%2C%0A%0AAs%20T%C3%BCrkiye%20prepares%20to%20host%20COP31%2C%20I%20am%20writing%20to%20raise%20concerns%20about%20reports%20relating%20to%20the%20treatment%20of%20community%20dogs%20and%20the%20possible%20environmental%20and%20public%20health%20implications.%0A%0AI%20respectfully%20ask%20your%20department%20to%20consider%20sharing%20these%20concerns%20with%20the%20relevant%20authorities%20and%20to%20encourage%20transparent%2C%20evidence-based%20review.%0A%0AAnimal%20welfare%2C%20environmental%20responsibility%20and%20public%20health%20are%20interconnected%20and%20should%20not%20be%20overlooked.%0A%0AThank%20you%20for%20your%20consideration.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Ministry of Environment — International Affairs
-                            <span>uluslararasi@csb.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:info@tarimorman.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Animal%20Welfare%20and%20Veterinary%20Oversight&body=Dear%20Ministry%20of%20Agriculture%20and%20Forestry%2C%0A%0AI%20am%20writing%20to%20express%20concern%20about%20the%20welfare%20and%20health%20of%20community%20dogs%20in%20T%C3%BCrkiye%20following%20changes%20introduced%20under%20Law%20No.%207527.%0A%0AI%20respectfully%20request%20transparent%20information%20about%20veterinary%20oversight%2C%20vaccination%20and%20treatment%20protocols%2C%20shelter%20conditions%2C%20animal%20identification%20and%20mortality%20records.%0A%0APlease%20ensure%20that%20the%20relevant%20authorities%20uphold%20applicable%20animal%20health%20and%20welfare%20standards%20and%20investigate%20credible%20reports%20of%20mistreatment.%0A%0AThank%20you%20for%20your%20attention.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Ministry of Agriculture & Forestry
-                            <span>info@tarimorman.gov.tr</span>
-                        </a>
-
-                        <a href="mailto:dkmp@tarimorman.gov.tr?subject=Where%20Are%20the%20Dogs%3F%20%E2%80%93%20Request%20for%20Animal%20Welfare%20Information&body=Dear%20Nature%20Conservation%20and%20National%20Parks%20Department%2C%0A%0AI%20am%20writing%20to%20raise%20concerns%20about%20the%20situation%20of%20community%20dogs%20in%20T%C3%BCrkiye%20and%20the%20reported%20conditions%20in%20facilities%20receiving%20dogs%20removed%20from%20public%20spaces.%0A%0AI%20respectfully%20ask%20for%20information%20about%20the%20department%27s%20oversight%20role%2C%20applicable%20animal%20welfare%20standards%2C%20inspection%20procedures%20and%20any%20measures%20taken%20in%20response%20to%20reports%20of%20animal%20deaths%20or%20neglect.%0A%0ATransparency%20and%20independent%20review%20are%20essential%20to%20protecting%20animal%20welfare.%0A%0AThank%20you%20for%20your%20time%20and%20consideration.%0A%0AKind%20regards%2C%0AWhere%20Are%20the%20Dogs%3F%20Campaign">
-                            Nature Conservation & National Parks
-                            <span>dkmp@tarimorman.gov.tr</span>
-                        </a>
-
+                        <p class="directory-label">
+                            TURKISH STATE & HOST PRESIDENCY AUTHORITIES
+                        </p>
+                        <div class="email-list">
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=cumhurbaskanligi%40tccb.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Request+for+Transparency+and+Animal+Protection&amp;body=Dear+Presidency+of+the+Republic+of+T%C3%BCrkiye%2C%0A%0AI+am+writing+to+express+serious+concern+about+the+situation+of+community+dogs+in+T%C3%BCrkiye+following+the+implementation+of+Law+No.+7527.%0A%0AI+respectfully+urge+the+Presidency+to+ensure+that+the+implementation+of+the+law+is+transparent%2C+humane+and+consistent+with+animal+welfare+principles.+Reports+of+poor+shelter+conditions%2C+animal+deaths+and+alleged+mass+graves+require+credible+independent+investigation+and+public+accountability.%0A%0APlease+ensure+that+the+relevant+authorities+provide+clear+information+about+the+fate+and+welfare+of+dogs+removed+from+the+streets.%0A%0AThank+you+for+your+attention.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Presidency of the Republic of Türkiye
+                                <span>cumhurbaskanligi@tccb.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ozelkalem%40icisleri.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Request+for+Investigation+and+Transparency&amp;body=Dear+Ministry+of+Interior%2C%0A%0AI+am+writing+to+raise+concerns+about+the+collection+and+placement+of+community+dogs+in+municipal+shelters+across+T%C3%BCrkiye.%0A%0AI+respectfully+request+transparent+information+about+the+implementation+of+Law+No.+7527%2C+including+the+locations+where+dogs+are+being+held%2C+their+conditions+of+care%2C+veterinary+oversight+and+mortality+records.%0A%0APlease+encourage+municipalities+to+comply+with+animal+welfare+requirements+and+ensure+that+credible+allegations+of+mistreatment+are+independently+investigated.%0A%0AThank+you+for+your+attention.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Ministry of Interior
+                                <span>ozelkalem@icisleri.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=gsekreter%40icisleri.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Request+for+Official+Information&amp;body=Dear+General+Secretariat+of+the+Ministry+of+Interior%2C%0A%0AI+am+writing+to+request+transparency+and+accountability+regarding+the+implementation+of+Law+No.+7527+and+the+treatment+of+community+dogs+in+T%C3%BCrkiye.%0A%0APlease+provide+or+direct+this+inquiry+to+the+appropriate+department+responsible+for+oversight+of+municipal+practices%2C+shelter+conditions%2C+veterinary+care+and+reporting+of+animal+deaths.%0A%0AI+respectfully+ask+that+concerns+about+alleged+mistreatment+be+reviewed+and+that+relevant+information+be+made+publicly+available.%0A%0AThank+you+for+your+assistance.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Ministry of Interior — General Secretariat
+                                <span>gsekreter@icisleri.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=basin%40icisleri.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Media+Inquiry+on+Community+Dogs+in+T%C3%BCrkiye&amp;body=Dear+Press+Office+of+the+Ministry+of+Interior%2C%0A%0AI+am+writing+to+request+an+official+response+regarding+the+implementation+of+Law+No.+7527+and+reports+concerning+the+treatment+of+community+dogs+in+T%C3%BCrkiye.%0A%0ACould+the+Ministry+provide+information+about+the+number+of+dogs+collected%2C+their+current+locations%2C+shelter+conditions%2C+veterinary+care%2C+and+reported+mortality+figures%3F%0A%0AWe+would+appreciate+a+transparent+response+addressing+the+concerns+raised+by+the+public+and+animal+welfare+organisations.%0A%0AThank+you+for+your+time.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Ministry of Interior — Press
+                                <span>basin@icisleri.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=bilgi%40csb.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Environmental+Oversight+and+Transparency&amp;body=Dear+Ministry+of+Environment%2C+Urbanisation+and+Climate+Change%2C%0A%0AI+am+writing+to+raise+concerns+about+reports+relating+to+the+treatment+of+community+dogs+in+T%C3%BCrkiye%2C+including+shelter+conditions%2C+animal+deaths+and+alleged+burial+sites.%0A%0AI+respectfully+ask+the+Ministry+to+consider+any+environmental%2C+sanitation+or+public+health+implications+within+its+remit+and+to+support+transparent+assessment+and+appropriate+oversight+where+necessary.%0A%0AThank+you+for+your+attention.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Ministry of Environment, Urbanisation & Climate Change
+                                <span>bilgi@csb.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=uluslararasi%40csb.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+International+Environmental+Attention+Ahead+of+COP31&amp;body=Dear+International+Affairs+Department%2C%0A%0AAs+T%C3%BCrkiye+prepares+to+host+COP31%2C+I+am+writing+to+raise+concerns+about+reports+relating+to+the+treatment+of+community+dogs+and+the+possible+environmental+and+public+health+implications.%0A%0AI+respectfully+ask+your+department+to+consider+sharing+these+concerns+with+the+relevant+authorities+and+to+encourage+transparent%2C+evidence-based+review.%0A%0AAnimal+welfare%2C+environmental+responsibility+and+public+health+are+interconnected+and+should+not+be+overlooked.%0A%0AThank+you+for+your+consideration.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Ministry of Environment — International Affairs
+                                <span>uluslararasi@csb.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=info%40tarimorman.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Animal+Welfare+and+Veterinary+Oversight&amp;body=Dear+Ministry+of+Agriculture+and+Forestry%2C%0A%0AI+am+writing+to+express+concern+about+the+welfare+and+health+of+community+dogs+in+T%C3%BCrkiye+following+changes+introduced+under+Law+No.+7527.%0A%0AI+respectfully+request+transparent+information+about+veterinary+oversight%2C+vaccination+and+treatment+protocols%2C+shelter+conditions%2C+animal+identification+and+mortality+records.%0A%0APlease+ensure+that+the+relevant+authorities+uphold+applicable+animal+health+and+welfare+standards+and+investigate+credible+reports+of+mistreatment.%0A%0AThank+you+for+your+attention.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Ministry of Agriculture & Forestry
+                                <span>info@tarimorman.gov.tr</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dkmp%40tarimorman.gov.tr&amp;su=Where+Are+the+Dogs%3F+%E2%80%93+Request+for+Animal+Welfare+Information&amp;body=Dear+Nature+Conservation+and+National+Parks+Department%2C%0A%0AI+am+writing+to+raise+concerns+about+the+situation+of+community+dogs+in+T%C3%BCrkiye+and+the+reported+conditions+in+facilities+receiving+dogs+removed+from+public+spaces.%0A%0AI+respectfully+ask+for+information+about+the+department%27s+oversight+role%2C+applicable+animal+welfare+standards%2C+inspection+procedures+and+any+measures+taken+in+response+to+reports+of+animal+deaths+or+neglect.%0A%0ATransparency+and+independent+review+are+essential+to+protecting+animal+welfare.%0A%0AThank+you+for+your+time+and+consideration.%0A%0AKind+regards%2C%0AWhere+Are+the+Dogs%3F+Campaign" target="_blank" rel="noopener noreferrer">
+                                Nature Conservation & National Parks
+                                <span>dkmp@tarimorman.gov.tr</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
                 <!-- ACTION 03: SOCIAL MEDIA + CAMPAIGN ASSETS -->
-
                 <article class="action-panel">
-
                     <div class="action-panel-heading">
-
                         <span class="action-index">ACTION 03</span>
-
                         <h3>TAKE ACTION — SHARE ON SOCIALS</h3>
-
                         <p>
-
                             Do not let COP31 greenwash this crisis.
-
                             Share the campaign and help more people
-
                             understand what is happening in Türkiye.
-
                         </p>
-
                     </div>
-
                     <div class="social-panel">
-
                         <div>
-
                             <h3>SPREAD THE MESSAGE</h3>
-
                             <p>
-
                                 Share the campaign with your network.
-
                                 Every post helps keep the question visible.
-
                             </p>
-
                         </div>
-
                         <div class="social-buttons">
-
                             <a
-
                                 class="social-button"
-
                                 href="https://twitter.com/intent/tweet?text=Where%20are%20the%20dogs%3F%20COP31%20must%20not%20look%20away.%20Demand%20transparency%20and%20accountability.%20%23WhereAreTheDogs"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
                             >
-
                                 Share on X <span>↗</span>
-
                             </a>
-
                             <a
-
                                 class="social-button"
-
                                 href="https://www.linkedin.com/sharing/share-offsite/?url=https://c.org/QBRM29h4LL"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
                             >
-
                                 Share on LinkedIn <span>↗</span>
-
                             </a>
-
                             <a
-
                                 class="social-button"
-
                                 href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fc.org%2FQBRM29h4LL"
-
                                 target="_blank"
-
                                 rel="noopener noreferrer"
-
                             >
-
                                 Share on Facebook <span>↗</span>
-
                             </a>
-
                             <button
-
                                 class="social-button"
-
                                 type="button"
-
                                 id="copyPageLink"
-
                             >
-
                                 Copy page link <span>⧉</span>
-
                             </button>
-
                             <p
-
                                 class="copy-feedback"
-
                                 id="copyFeedback"
-
                                 aria-live="polite"
-
                             ></p>
-
                         </div>
-
                     </div>
-
 
                     <!-- CAMPAIGN ASSETS -->
-
                     <div class="banner-download">
-
                         <div class="banner-download-copy">
-
                             <span class="action-index">CAMPAIGN ASSETS</span>
-
                             <h3>
-
                                 SUPPORT THE CAUSE<br>
-
                                 <span>MAKE IT VISIBLE</span>
-
                             </h3>
-
                             <p>
-
                                 Download the campaign LinkedIn banner.
-
                                 Add it to your profile and help keep
-
                                 the message visible.
-
                             </p>
-
                             <a
-
                                 class="campaign-button button-red"
-
                                 href="assets/images/linkedinbanner.png"
-
                                 download="linkedinbanner.png"
-
                             >
-
                                 DOWNLOAD THIS LINKEDIN BANNER AND SUPPORT THE CAUSE
-
                                 <span>↓</span>
-
                             </a>
-
                         </div>
-
                         <div class="banner-preview">
-
                             <img
-
                                 src="assets/images/linkedinbanner.png"
-
                                 alt="Where Are the Dogs campaign LinkedIn banner"
-
                                 loading="lazy"
-
                             >
-
                         </div>
-
                     </div>
-
                 </article>
-
 
                 <!-- ACTION 04: ANTALYA SHELTERS -->
-
                 <article class="action-panel dossier-panel">
-
                     <span class="action-index">ACTION 04</span>
-
                     <h3>VISIT MUNICIPAL SHELTERS IN ANTALYA</h3>
-
                     <p>
-
                         COP31 delegates, observers and visitors can
-
                         consult the campaign's shelter map and
-
                         information about relevant locations in Antalya.
-
                     </p>
-
                     <p>
-
                         Please verify access arrangements and local
-
                         requirements before visiting any facility.
-
                     </p>
-
                     <a
-
                         class="campaign-button button-outline"
-
                         href="https://drive.google.com/file/d/16aHRvBqYnjbyVaR02Mp3NvXqmLSRUY_j/view?usp=sharing"
-
                         target="_blank"
-
                         rel="noopener noreferrer"
-
                     >
-
                         ANTALYA SHELTER MAP <span>↗</span>
-
                     </a>
-
                 </article>
-
             </div>
-
         </section>
 
-
         <!-- SECTION 04: CONTACT -->
-
         <section class="contact-section section-space" id="contact">
-
             <div class="content-container contact-layout">
-
                 <div class="contact-copy">
-
                     <p class="section-label">SECTION 04</p>
-
                     <h2>
-
                         GET IN<br>
-
                         <span>TOUCH</span>
-
                     </h2>
-
                     <p class="contact-lead">
-
                         We welcome inquiries from press, media
-
                         organisations, COP31 delegates and observers,
-
                         and members of the public.
-
                     </p>
-
                     <div class="press-note">
-
                         <h3>FOR JOURNALISTS & MEDIA OUTLETS</h3>
-
                         <p>
-
                             The campaign can provide further information
-
                             about its evidence dossier, including legal
-
                             documentation, shelter-related records,
-
                             photographic material and eyewitness accounts.
-
                         </p>
-
                     </div>
-
                 </div>
 
-
                 <form class="contact-form" id="contactForm">
-
                     <h3>SEND AN INQUIRY</h3>
-
                     <label for="fullName">Full name</label>
-
                     <input
-
                         type="text"
-
                         id="fullName"
-
                         name="fullName"
-
                         placeholder="Your name"
-
                         autocomplete="name"
-
                         required
-
                     >
 
                     <label for="emailAddress">Email address</label>
-
                     <input
-
                         type="email"
-
                         id="emailAddress"
-
                         name="emailAddress"
-
                         placeholder="you@example.com"
-
                         autocomplete="email"
-
                         required
-
                     >
 
                     <label for="inquiryType">Inquiry type</label>
-
                     <select id="inquiryType" name="inquiryType" required>
-
                         <option value="">Select a topic</option>
-
                         <option value="Press and media">Press and media</option>
-
                         <option value="COP31 delegate or observer">COP31 delegate or observer</option>
-
                         <option value="Evidence and documentation">Evidence and documentation</option>
-
                         <option value="General inquiry">General inquiry</option>
-
                     </select>
 
                     <label for="message">Message</label>
-
                     <textarea
-
                         id="message"
-
                         name="message"
-
                         rows="5"
-
                         placeholder="Write your message..."
-
                         required
-
                     ></textarea>
 
                     <button class="campaign-button button-red" type="submit">
-
                         SEND INQUIRY <span>↗</span>
-
                     </button>
-
                 </form>
-
             </div>
-
         </section>
-
 
         <!-- FINAL CALL TO ACTION -->
-
         <section class="final-campaign-cta">
-
             <img
-
                 src="assets/images/image6.png"
-
                 alt="A community dog"
-
                 class="final-cta-image"
-
                 loading="lazy"
-
             >
-
             <div class="final-cta-overlay"></div>
-
             <div class="final-cta-content">
-
                 <p class="section-label">
-
                     THE QUESTION REMAINS
-
                 </p>
-
                 <h2>
-
                     WHERE ARE<br>
-
                     <span>THE DOGS?</span>
-
                 </h2>
-
                 <p>
-
                     COP31 must not look away.
-
                     The world must demand answers.
-
                 </p>
-
                 <a
-
                     class="campaign-button button-red"
-
                     href="https://c.org/QBRM29h4LL"
-
                     target="_blank"
-
                     rel="noopener noreferrer"
-
                 >
-
                     SIGN THE PETITION <span>↗</span>
-
                 </a>
-
             </div>
-
         </section>
-
     </main>
 
-
     <!-- FOOTER -->
-
     <footer class="campaign-footer">
-
         <a href="#home" class="footer-wordmark">
-
             WHERE ARE THE DOGS?
-
         </a>
-
         <p>
-
             Animal welfare · Transparency · Accountability
-
         </p>
-
         <div class="footer-links">
-
             <a href="#crisis">The crisis</a>
-
             <a href="#cop31">COP31</a>
-
             <a href="#action">Take action</a>
-
             <a href="#contact">Contact</a>
-
         </div>
-
         <div class="footer-bottom">
-
             <span>WHERE ARE THE DOGS?</span>
-
             <span>THE WORLD MUST DEMAND ANSWERS</span>
-
         </div>
-
     </footer>
 
-
     <!-- COPY PAGE LINK -->
-
     <script>
-
         const copyButton = document.getElementById("copyPageLink");
-
         const copyFeedback = document.getElementById("copyFeedback");
 
         if (copyButton && copyFeedback) {
-
             copyButton.addEventListener("click", async () => {
-
                 try {
-
                     await navigator.clipboard.writeText(window.location.href);
-
                     copyFeedback.textContent = "Page link copied";
-
                 } catch (error) {
-
                     copyFeedback.textContent =
-
                         "Copy unavailable. Please copy the page URL manually.";
-
                 }
-
             });
-
         }
 
-
-        // Open the visitor's email app with the inquiry already filled in.
-
+        // Open Gmail with the completed inquiry ready for review and sending.
         const contactForm = document.getElementById("contactForm");
 
         if (contactForm) {
-
             contactForm.addEventListener("submit", function (event) {
-
                 event.preventDefault();
+                if (!contactForm.reportValidity()) return;
 
                 const name = document.getElementById("fullName").value.trim();
-
                 const email = document.getElementById("emailAddress").value.trim();
-
                 const inquiryType = document.getElementById("inquiryType").value;
-
                 const message = document.getElementById("message").value.trim();
 
-                const subject = encodeURIComponent(
+                const subject = "Where Are the Dogs? - " + inquiryType;
+                const body =
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Inquiry type: " + inquiryType + "\n\n" +
+                    "Message:\n" + message;
 
-                    "Where Are the Dogs? - " + inquiryType
+                const gmailUrl =
+                    "https://mail.google.com/mail/?view=cm&fs=1" +
+                    "&to=" + encodeURIComponent("contact@wherearethedogs.org") +
+                    "&su=" + encodeURIComponent(subject) +
+                    "&body=" + encodeURIComponent(body);
 
-                );
-
-                const body = encodeURIComponent(
-
-                    "Name: " + name +
-
-                    "\nEmail: " + email +
-
-                    "\nInquiry type: " + inquiryType +
-
-                    "\n\nMessage:\n" + message
-
-                );
-
-                window.location.href =
-
-                    "mailto:contact@wherearethedogs.org?subject=" +
-
-                    subject + "&body=" + body;
-
+                window.location.href = gmailUrl;
             });
-
         }
-
     </script>
-
 </body>
 
 </html>

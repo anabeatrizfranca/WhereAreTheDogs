@@ -2,7 +2,7 @@
 const contactForm = document.getElementById("contactForm");
 const inquiryFeedback = document.getElementById("inquiryFeedback");
 
-if (contactForm) {
+if (contactForm && inquiryFeedback) {
     contactForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
@@ -23,13 +23,13 @@ if (contactForm) {
         const formData = new FormData(contactForm);
 
         // Define o assunto do e-mail
-        formData.append(
+        formData.set(
             "_subject",
             "Where Are the Dogs? - " + formData.get("inquiryType")
         );
 
         // Permite responder diretamente ao visitante
-        formData.append(
+        formData.set(
             "_replyto",
             formData.get("emailAddress")
         );
@@ -58,6 +58,8 @@ if (contactForm) {
             contactForm.reset();
 
         } catch (error) {
+            console.error(error);
+
             inquiryFeedback.textContent =
                 "Something went wrong. Please try again later.";
 

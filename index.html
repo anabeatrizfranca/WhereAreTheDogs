@@ -725,6 +725,13 @@
                     <button class="campaign-button button-red" type="submit">
                         SEND INQUIRY <span>↗</span>
                     </button>
+
+                    <div
+                        id="inquiryFeedback"
+                        class="inquiry-feedback"
+                        role="status"
+                        aria-live="polite"
+                    ></div>
                 </form>
             </div>
         </section>
@@ -799,36 +806,11 @@
             });
         }
 
-        // Open Gmail with the completed inquiry ready for review and sending.
-        const contactForm = document.getElementById("contactForm");
-
-        if (contactForm) {
-            contactForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-                if (!contactForm.reportValidity()) return;
-
-                const name = document.getElementById("fullName").value.trim();
-                const email = document.getElementById("emailAddress").value.trim();
-                const inquiryType = document.getElementById("inquiryType").value;
-                const message = document.getElementById("message").value.trim();
-
-                const subject = "Where Are the Dogs? - " + inquiryType;
-                const body =
-                    "Name: " + name + "\n" +
-                    "Email: " + email + "\n" +
-                    "Inquiry type: " + inquiryType + "\n\n" +
-                    "Message:\n" + message;
-
-                const gmailUrl =
-                    "https://mail.google.com/mail/?view=cm&fs=1" +
-                    "&to=" + encodeURIComponent("contact@wherearethedogs.org") +
-                    "&su=" + encodeURIComponent(subject) +
-                    "&body=" + encodeURIComponent(body);
-
-                window.location.href = gmailUrl;
-            });
-        }
+        
     </script>
+
+    <script src="./script.js" defer></script>
+    
 </body>
 
 </html>

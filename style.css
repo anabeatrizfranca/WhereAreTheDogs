@@ -2500,3 +2500,30 @@ body h3 span {
     }
 }
 
+.inquiry-feedback {
+    display: none;
+    margin-top: 18px;
+    padding: 14px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.inquiry-feedback.success {
+    display: block;
+    background: #e8f5ec;
+    color: #216b38;
+    border: 1px solid #b7dfc2;
+}
+
+.inquiry-feedback.error {
+    display: block;
+    background: #fff0f0;
+    color: #b42318;
+    border: 1px solid #f2b8b5;
+}
+
+.contact-form button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
